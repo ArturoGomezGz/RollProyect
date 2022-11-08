@@ -1,0 +1,248 @@
+:root{
+    --color1: rgb(210, 210, 210);
+    --color2: gray;
+    --color3: rgb(194, 194, 194);
+    --color4: rgb(247, 176, 46);
+    --color5: black;
+    --fuente1: arial;
+    --headerSpace: 70px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fuente1);
+}
+.carritoInactive{
+    transform: translateX(620px);
+    transition: 1s;
+}
+.inactiveMovilMenu{
+    transform: translateX(-200px);
+    transition: 1s;
+}
+/* Encabezado barra de navegación */
+header{
+    background-color: var(--color2);
+    width: 100%;
+    height: var(--headerSpace);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-bottom: 2px solid var(--color5);
+}
+header button img{
+    width: 100%;
+}
+header button{
+    width: 40px;
+    margin: 24px;
+    background-color: var(--color2);
+    border: none;
+    display: none;
+}
+#logo{
+    margin: 20px;
+    background-color: var(--color5);
+    padding: 6px;
+    border-radius: 10px;
+}
+#logo p{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: var(--color1);
+    text-align: center;
+}
+#logo p:first-of-type{
+    color: var(--color4);
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    width: auto;
+    list-style: none;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color1);
+    cursor: pointer;
+}
+nav ul li:hover{
+    color: var(--color4);
+}
+nav ul li ::first-letter{
+    text-transform: capitalize;
+}
+#lo-mas-vendido-nav{
+    text-transform: uppercase;
+}
+#carritoButton{
+    width: 40px;
+    height: 40px;
+    margin: 24px;
+    position: relative;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+#carritoButton img{
+    width: 100%;
+}
+#carritoButton p{
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    background-color: var(--color4);
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1.3px solid var(--color5);
+}
+/* Lista de productos */
+main{
+    margin-top: var(--headerSpace);
+    width: 100%;
+    height: auto;
+    background-color: var(--color1);
+}
+#sections-container>h2{
+    text-align: center;
+    padding-top: 15px;
+    font-size: 30px;
+}
+#sections-container>h2::first-letter{
+    text-transform: capitalize;
+}
+.cards-container{
+    display: grid;
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    gap: 30px;
+    place-content: center;
+    margin-top: 20px;
+}
+.card .imagen-de-producto{
+    width: 100%;
+    border-radius: 20px;
+    background-color: white;
+}
+.card{
+    width: 250px;
+    background-color: var(--color3);
+    padding: 15px;
+    margin-top: 25px;
+    border-radius: 20px;
+;
+}
+.nombre-de-producto-card{
+    font-weight: bold;
+}
+.card-info{
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.agregar-al-carrito{
+    background-color: var(--color4);
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 4px;
+    display: flex;
+}
+.agregar-al-carrito img{
+    margin: auto;
+    width: 35px;
+    bottom: 4px;
+    left: 6px;
+}
+/* parametros de secciones */
+#los-mas-vendidos .false{
+    display: none;
+}
+#dulces .salado, #dulces .bebida{
+    display: none;
+}
+#salados .dulce, #salados .bebida{
+    display: none;
+}
+#bebidas .dulce, #bebidas .salado{
+    display: none;
+}
+/* carrito */
+#carrito{
+    width: 350px;
+    background-color: var(--color3);
+    position: fixed;
+    top: var(--headerSpace);
+    right: 0;
+    height: 100%;
+    transition: 1s;
+}
+#carrito > h2{
+    padding: 5px 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.imagen-de-producto-en-carrito img{
+    width: 100%;
+    border-radius: 10px;
+}
+.producto-en-carrito{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 8px;
+}
+.imagen-de-producto-en-carrito{
+    width: 30%;
+}
+.producto-en-carrito .nombre-y-precio p:first-of-type{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.boton-borrar-producto-de-carrito{
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    border-radius: 50%;
+    border: 1px solid var(--color5);
+    background-color: var(--color3);
+    cursor: pointer;
+}
+/* menu de movil */
+#menu-movil{
+    width: 200px;
+    height: 500px;
+    background-color: var(--color3);
+    position: fixed;
+    top: var(--headerSpace);
+    left: 0;
+    transition: 1s;
+}
+#contenido-menu-movil{
+    margin: 30px auto ;
+    width: 80%;
+}
+#contenido-menu-movil ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+}
+#contenido-menu-movil ul li{
+    text-transform: capitalize;
+    font-size: 22px;
+    margin-top: 20px;
+    border-bottom: 1px solid var(--color5);
+    text-align: right;
+}

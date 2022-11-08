@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolls</title>
+    <link rel="stylesheet" href="./Styles/Main.css">
+    <link rel="stylesheet" href="Styles/Mobil.css" media="screen and (max-width: 620px)">
+</head>
+<body>
+    
+    <header>
+        <button id="boton-menu-movil"><img src="Imagenes/menu.png" alt=""></button>
+        <div id="logo"><p>Roll</p><p>Roll</p></div>
+        <nav>
+            <ul>
+                <li id="lo-mas-vendido-nav"><p>Mas vendido</p></li>
+                <li id="dulces-nav-button"><p>dulces</p></li>
+                <li id="salados-nav-button"><p>salados</p></li>
+                <li id="bebidas-nav-button"><p>bebidas</p></li>
+            </ul>
+        </nav>
+
+        <div id="carritoButton">
+            <img src="Imagenes/carrito.png" alt="">
+            <p>4</p>
+        </div>
+
+    </header>
+
+    <main>
+        <div id="sections-container">
+            <h2 id="LMV-section">los mas vendidos</h2>
+            <div id="los-mas-vendidos" class="cards-container">
+
+            </div>
+
+            <h2 id="dulces-section">dulces</h2>
+            <div id="dulces" class="cards-container">
+
+            </div>
+
+            <h2 id="salados-section">salados</h2>
+            <div id="salados" class="cards-container">
+
+            </div>
+
+            <h2 id="bebidas-section">bebidas</h2>
+            <div id="bebidas" class="cards-container">
+
+            </div>
+        </div>
+    </main>
+
+    <aside id="carrito" class="carritoInactive">
+        <div class="producto-en-carrito">
+            <div class="imagen-de-producto-en-carrito"><img src="Imagenes/RollDeCanela.jpeg"></div>
+            <div class="nombre-y-precio">
+                <p>Roll De Canela</p>
+                <p>$25</p>
+            </div>
+            <p class="boton-borrar-producto-de-carrito">x</p>
+        </div>
+    </aside>
+
+    <aside id="menu-movil" class="inactiveMovilMenu">
+        <div id="contenido-menu-movil">
+            <ul>
+                <li id="lo-mas-vendido-nav-mov"><p>Mas vendido</p></li>
+                <li id="dulces-nav-button-mov"><p>dulces</p></li>
+                <li id="salados-nav-button-mov"><p>salados</p></li>
+                <li id="bebidas-nav-button-mov"><p>bebidas</p></li>
+            </ul>
+        </div>
+    </aside>
+
+    <footer>
+        
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+</html>
