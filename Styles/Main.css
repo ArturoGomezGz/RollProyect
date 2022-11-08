@@ -103,6 +103,9 @@ nav ul li ::first-letter{
     border: 1.3px solid var(--color5);
 }
 /* Lista de productos */
+.agregar-al-carrito{
+    cursor: pointer;
+}
 main{
     margin-top: var(--headerSpace);
     width: 100%;
